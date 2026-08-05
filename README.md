@@ -161,17 +161,6 @@ npm run build
 
 Os artefatos serão gerados na pasta `dist/`.
 
-## 📌 Observações finais
-
-Este projeto foi estruturado para ser um MVP funcional de quadro Kanban/Trello, com foco em usabilidade real, organização visual e manipulação direta com o mouse.
-
-Se quiser evoluir ainda mais, os próximos passos naturais são:
-
-- persistência em backend
-- drag and drop mais refinado
-- filtros por responsável ou label
-- criação de checklist e comentários
-
 ---
 
-Feito com ❤️ para organização visual de trabalho em equipe.
+Feito com ❤️ Allan Vinicius Seleguim.
