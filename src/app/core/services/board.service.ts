@@ -22,7 +22,7 @@ export class BoardService {
   );
 
   loadBoard(): void {
-    this.http.get<BoardResponse>('/assets/data/fakedb.json').subscribe((response) => {
+    this.http.get<BoardResponse>('assets/data/fakedb.json').subscribe((response) => {
       this.usersSignal.set(response.users);
       this.labelsSignal.set(response.labels);
       this.boardSignal.set(this.normalizeBoard(response.board));

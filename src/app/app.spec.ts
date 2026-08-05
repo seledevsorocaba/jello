@@ -56,7 +56,7 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     fixture.detectChanges();
 
-    const req = httpTesting.expectOne('/assets/data/fakedb.json');
+    const req = httpTesting.expectOne('assets/data/fakedb.json');
     req.flush(mockBoard);
 
     fixture.detectChanges();
