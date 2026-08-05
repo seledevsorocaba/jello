@@ -1,0 +1,143 @@
+{
+  "users": [
+    { "id": "u1", "name": "Ana", "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" },
+    { "id": "u2", "name": "Bruno", "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" },
+    { "id": "u3", "name": "Carla", "avatarUrl": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=200&q=80" },
+    { "id": "u4", "name": "Diego", "avatarUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" },
+    { "id": "u5", "name": "Lívia", "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" },
+    { "id": "u6", "name": "Mateus", "avatarUrl": "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=200&q=80" }
+  ],
+  "labels": [
+    { "id": "l1", "name": "Marketing", "color": "#ff9f1a" },
+    { "id": "l2", "name": "Jurídico", "color": "#61bd4f" },
+    { "id": "l3", "name": "Externo", "color": "#f2d600" },
+    { "id": "l4", "name": "Design", "color": "#00c2e0" },
+    { "id": "l5", "name": "Produção", "color": "#c377e0" },
+    { "id": "l6", "name": "Vendas", "color": "#0079bf" }
+  ],
+  "board": {
+    "id": "b1",
+    "title": "Gestão de Projetos",
+    "workspace": "Inktistic ENT",
+    "visibility": "Visível para o espaço de trabalho",
+    "members": ["u1", "u2", "u3", "u4", "u5", "u6"],
+    "lists": [
+      {
+        "id": "list1",
+        "title": "Backlog",
+        "cards": [
+          {
+            "id": "c1",
+            "title": "Priorização de demandas",
+            "labelIds": ["l1"],
+            "dueDate": "20 set",
+            "hasDescription": true,
+            "checklist": "0/3",
+            "memberIds": ["u3"]
+          },
+          {
+            "id": "c2",
+            "title": "Mapeamento de requisitos",
+            "labelIds": ["l2"],
+            "hasDescription": true,
+            "memberIds": ["u1"]
+          }
+        ]
+      },
+      {
+        "id": "list2",
+        "title": "Refinamento",
+        "cards": [
+          {
+            "id": "c3",
+            "title": "Detalhar histórias de usuário",
+            "labelIds": ["l4"],
+            "hasDescription": true,
+            "attachments": 1,
+            "memberIds": ["u2"]
+          },
+          {
+            "id": "c4",
+            "title": "Validar critérios de aceite",
+            "labelIds": ["l3", "l4"],
+            "dueDate": "23 mar",
+            "dueDateStatus": "done",
+            "checklist": "1/3",
+            "memberIds": ["u5"]
+          }
+        ]
+      },
+      {
+        "id": "list3",
+        "title": "Desenvolvimento",
+        "cards": [
+          {
+            "id": "c5",
+            "title": "Implementar integração com API",
+            "labelIds": ["l5", "l4"],
+            "dueDate": "26 ago",
+            "attachments": 2,
+            "checklist": "0/4",
+            "memberIds": ["u4"]
+          }
+        ]
+      },
+      {
+        "id": "list4",
+        "title": "Desenvolvido",
+        "cards": [
+          {
+            "id": "c6",
+            "title": "Entrega da versão interna",
+            "labelIds": ["l6"],
+            "dueDate": "15 set",
+            "memberIds": ["u6"]
+          }
+        ]
+      },
+      {
+        "id": "list5",
+        "title": "Teste de qualidade",
+        "cards": [
+          {
+            "id": "c7",
+            "title": "Executar testes de regressão",
+            "labelIds": ["l2"],
+            "dueDate": "30 jun",
+            "dueDateStatus": "done",
+            "hasDescription": true,
+            "memberIds": ["u3"]
+          }
+        ]
+      },
+      {
+        "id": "list6",
+        "title": "Produção",
+        "cards": [
+          {
+            "id": "c8",
+            "title": "Publicar release da sprint",
+            "labelIds": ["l3", "l1"],
+            "dueDate": "3 jun",
+            "dueDateStatus": "done",
+            "checklist": "5/5",
+            "memberIds": ["u2"]
+          }
+        ]
+      },
+      {
+        "id": "list7",
+        "title": "Pós prod smoke test",
+        "cards": [
+          {
+            "id": "c9",
+            "title": "Verificar saúde da aplicação",
+            "labelIds": ["l5"],
+            "dueDate": "5 set",
+            "memberIds": ["u1"]
+          }
+        ]
+      }
+    ]
+  }
+}

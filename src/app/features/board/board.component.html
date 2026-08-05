@@ -1,0 +1,37 @@
+@if (board(); as boardData) {
+  <div class="board-shell">
+    <header class="topbar">
+      <div class="brand-block">
+        <span class="logo">Jello</span>
+        <div class="workspace-meta">
+          <h1>{{ boardData.title }}</h1>
+          <span>{{ boardData.workspace }} · {{ boardData.visibility }}</span>
+        </div>
+      </div>
+
+      <div class="members">
+        @for (member of boardData.members.slice(0, 3); track member) {
+          @if (memberMap()[member]; as user) {
+            <app-avatar [user]="user" />
+          }
+        }
+      </div>
+    </header>
+
+    <div class="board">
+      @for (list of boardData.lists; track list.id) {
+        <app-list
+          [list]="list"
+          [labels]="labels()"
+          [users]="users()"
+          (createCard)="createCard($event)"
+          (deleteCard)="deleteCard($event)"
+          (moveCard)="moveCard($event)"
+          (toggleLabel)="toggleLabel($event)"
+          (setMember)="setMember($event)"
+          (editCard)="editCard($event)"
+        />
+      }
+    </div>
+  </div>
+}
